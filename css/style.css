@@ -1,0 +1,631 @@
+/* ================= GOOGLE FONT ================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8f9fa;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#ffffff;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    z-index:1000;
+}
+
+.navbar{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+/* ================= LOGO ================= */
+
+.logo img{
+    width:180px;
+    height:auto;
+}
+
+/* ================= NAVIGATION ================= */
+
+.nav-links{
+    list-style:none;
+    display:flex;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#222;
+    font-size:17px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active{
+    color:#0099ff;
+}
+
+/* ================= BOOK BUTTON ================= */
+
+.book-btn{
+    text-decoration:none;
+    background:#0099ff;
+    color:white;
+    padding:12px 28px;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.book-btn:hover{
+    background:#0077cc;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("../images/hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    color:white;
+}
+
+.hero-content{
+    width:80%;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    max-width:700px;
+    margin:auto;
+    margin-bottom:35px;
+}
+
+/* ================= HERO BUTTONS ================= */
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.btn-primary,
+.btn-secondary{
+
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:35px;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.btn-primary{
+
+    background:#0099ff;
+    color:white;
+
+}
+
+.btn-primary:hover{
+
+    background:#0077cc;
+
+}
+
+.btn-secondary{
+
+    background:white;
+    color:#222;
+
+}
+
+.btn-secondary:hover{
+
+    background:#f0f0f0;
+
+}
+/* ================= SEARCH BOX ================= */
+
+.search-box{
+    width:100%;
+    margin-top:-60px;
+    position:relative;
+    z-index:100;
+}
+
+.search-card{
+    width:85%;
+    margin:auto;
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.search-card div{
+    flex:1;
+}
+
+.search-card label{
+    display:block;
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+.search-card input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+    font-size:16px;
+}
+
+.search-card button{
+    background:#0099ff;
+    color:#fff;
+    border:none;
+    padding:14px 35px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.search-card button:hover{
+    background:#0077cc;
+}
+
+/* ================= DESTINATIONS ================= */
+
+.destinations{
+    width:90%;
+    margin:80px auto;
+    text-align:center;
+}
+
+.destinations h2{
+    font-size:40px;
+    margin-bottom:10px;
+    color:#0f172a;
+}
+
+.destinations p{
+    color:#666;
+    margin-bottom:40px;
+}
+
+/* ================= DESTINATION CARDS ================= */
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    color:#0f172a;
+    margin-bottom:10px;
+    font-size:24px;
+}
+
+.card-content p{
+    color:#555;
+    font-size:16px;
+}
+/* ================= FEATURED PACKAGES ================= */
+
+.packages{
+    width:90%;
+    margin:80px auto;
+    text-align:center;
+}
+
+.packages h2{
+    font-size:40px;
+    margin-bottom:40px;
+    color:#0f172a;
+}
+
+.package-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.package-card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:.4s;
+}
+
+.package-card:hover{
+    transform:translateY(-10px);
+}
+
+.package-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.package-card h3{
+    margin-top:20px;
+    color:#0f172a;
+    font-size:24px;
+}
+
+.package-card p{
+    color:#666;
+    margin:10px 20px;
+}
+
+.package-card span{
+    display:block;
+    color:#0099ff;
+    font-size:28px;
+    font-weight:700;
+    margin:15px 0;
+}
+
+.package-card a{
+    display:inline-block;
+    margin-bottom:25px;
+    text-decoration:none;
+    background:#0099ff;
+    color:#fff;
+    padding:12px 28px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.package-card a:hover{
+    background:#0077cc;
+}
+
+/* ================= WHY CHOOSE US ================= */
+
+.services{
+    background:#eef7ff;
+    padding:80px 5%;
+    text-align:center;
+}
+
+.services h2{
+    font-size:40px;
+    margin-bottom:50px;
+    color:#0f172a;
+}
+
+.service-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.service{
+    background:#fff;
+    padding:35px 25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.service:hover{
+    transform:translateY(-10px);
+}
+
+.service img{
+    width:70px;
+    height:70px;
+    object-fit:contain;
+    margin-bottom:20px;
+}
+
+.service h3{
+    margin-bottom:15px;
+    color:#0f172a;
+    font-size:24px;
+}
+
+.service p{
+    color:#666;
+    font-size:16px;
+}
+/* ================= TESTIMONIALS ================= */
+
+.testimonials{
+    padding:80px 10%;
+    background:#ffffff;
+    text-align:center;
+}
+
+.testimonials h2{
+    font-size:40px;
+    color:#0f172a;
+    margin-bottom:40px;
+}
+
+.testimonial-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.testimonial{
+    background:#f8f9fa;
+    width:350px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+.testimonial p{
+    font-style:italic;
+    color:#555;
+    margin-bottom:20px;
+}
+
+.testimonial h4{
+    color:#0099ff;
+}
+
+/* ================= NEWSLETTER ================= */
+
+.newsletter{
+    background:#0099ff;
+    color:#fff;
+    text-align:center;
+    padding:70px 10%;
+}
+
+.newsletter h2{
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.newsletter p{
+    margin-bottom:30px;
+}
+
+.newsletter-box{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.newsletter-box input{
+    width:350px;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    outline:none;
+    font-size:16px;
+}
+
+.newsletter-box button{
+    padding:15px 30px;
+    border:none;
+    border-radius:30px;
+    background:#0f172a;
+    color:#fff;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.newsletter-box button:hover{
+    background:#1e293b;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#0f172a;
+    color:#fff;
+    padding:60px 10% 20px;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:40px;
+}
+
+.footer-logo{
+    width:160px;
+    margin-bottom:15px;
+}
+
+.footer-container h3{
+    margin-bottom:15px;
+}
+
+.footer-container a{
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    margin:8px 0;
+    transition:.3s;
+}
+
+.footer-container a:hover{
+    color:#00c3ff;
+}
+
+.footer-icon{
+    width:20px;
+    vertical-align:middle;
+    margin-right:10px;
+}
+
+.social-icon{
+    width:35px;
+    margin-right:10px;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.social-icon:hover{
+    transform:scale(1.2);
+}
+
+hr{
+    margin:30px 0 15px;
+    border:1px solid rgba(255,255,255,.2);
+}
+
+.copyright{
+    text-align:center;
+    color:#ccc;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-content h1{
+        font-size:45px;
+    }
+
+    .search-card{
+        flex-direction:column;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero{
+        height:90vh;
+    }
+
+    .hero-content h1{
+        font-size:34px;
+    }
+
+    .hero-content p{
+        font-size:16px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        width:220px;
+        text-align:center;
+    }
+
+    .newsletter-box input{
+        width:100%;
+    }
+
+    .newsletter-box button{
+        width:100%;
+    }
+
+    .logo img{
+        width:140px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .destinations h2,
+    .packages h2,
+    .services h2,
+    .testimonials h2,
+    .newsletter h2{
+        font-size:30px;
+    }
+
+    .card img,
+    .package-card img{
+        height:200px;
+    }
+
+}
